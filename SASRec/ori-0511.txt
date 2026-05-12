@@ -1,0 +1,549 @@
+C:\Anaconda3\envs\DSL-main20231201\python.exe C:/毕业设计代码/mixup-BASRec-main/SASRec/src/main.py
+Using Cuda: True
+--------------------Configure Info:------------
+data_dir                       :                            ../data/
+output_dir                     :                             output/
+data_name                      :                              Beauty
+do_eval                        :                                   0
+model_idx                      :                                   1
+load_pretrain                  :                                   0
+gpu_id                         :                                   0
+noise_ratio                    :                                 0.0
+training_data_ratio            :                                 1.0
+similarity_model_name          :                          ItemCF_IUF
+base_augment_type              :                              random
+model_name                     :                              M4SRec
+hidden_size                    :                                  64
+num_hidden_layers              :                                   2
+num_attention_heads            :                                   2
+hidden_act                     :                                gelu
+initializer_range              :                                0.02
+max_seq_length                 :                                  50
+lr                             :                               0.001
+batch_size                     :                                 256
+no_cuda                        :                                   0
+log_freq                       :                                   1
+seed                           :                                2024
+weight_decay                   :                                 0.0
+adam_beta1                     :                                 0.9
+adam_beta2                     :                               0.999
+augmentation_warm_up_epoches   :                                 500
+epochs                         :                                 200
+pretrain_epoch                 :                                   0
+start_valid                    :                                 100
+patience                       :                                  20
+n_pairs                        :                                   1
+n_whole_level                  :                                   1
+wml_weight                     :                                 1.0
+aml_weight                     :                                 1.0
+rec_weight                     :                                 1.0
+attention_probs_dropout_prob   :                                 0.2
+hidden_dropout_prob            :                                 0.2
+beta                           :                                 0.3
+rate_min                       :                                 0.2
+rate_max                       :                                0.51
+cuda_condition                 :                                   1
+data_file                      :                  ../data/Beauty.txt
+item_size                      :                               12103
+log_file                       :          output/M4SRec-Beauty-1.txt
+the similirity dict not exist, generating...
+getting item similarity...
+Step 1: Compute Statistics
+100%|██████████| 22363/22363 [00:01<00:00, 16018.83it/s]
+  0%|          | 0/11998 [00:00<?, ?it/s]Step 2: Compute co-rate matrix
+100%|██████████| 11998/11998 [00:00<00:00, 19396.00it/s]
+saving data to  ../data/Beauty_ItemCF_IUF_similarity.pkl
+Similarity Model Type: offline
+Total augmentation numbers:  2
+Similarity Model Type: offline
+Total augmentation numbers:  2
+Similarity Model Type: offline
+Total augmentation numbers:  2
+Total Parameters: 877888
+100%|██████████| 88/88 [00:16<00:00,  5.21it/s]
+{'epoch': 0, 'rec_avg_loss': '1.2932'}
+100%|██████████| 88/88 [00:13<00:00,  6.76it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 1, 'rec_avg_loss': '1.1488'}
+100%|██████████| 88/88 [00:12<00:00,  6.84it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 2, 'rec_avg_loss': '1.0694'}
+100%|██████████| 88/88 [00:13<00:00,  6.44it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 3, 'rec_avg_loss': '0.9835'}
+100%|██████████| 88/88 [00:13<00:00,  6.47it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 4, 'rec_avg_loss': '0.9007'}
+100%|██████████| 88/88 [00:13<00:00,  6.39it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 5, 'rec_avg_loss': '0.8201'}
+100%|██████████| 88/88 [00:14<00:00,  6.07it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 6, 'rec_avg_loss': '0.7550'}
+100%|██████████| 88/88 [00:16<00:00,  5.20it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 7, 'rec_avg_loss': '0.6954'}
+100%|██████████| 88/88 [00:16<00:00,  5.24it/s]
+{'epoch': 8, 'rec_avg_loss': '0.6463'}
+100%|██████████| 88/88 [00:17<00:00,  5.15it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 9, 'rec_avg_loss': '0.6018'}
+100%|██████████| 88/88 [00:15<00:00,  5.52it/s]
+{'epoch': 10, 'rec_avg_loss': '0.5626'}
+100%|██████████| 88/88 [00:15<00:00,  5.61it/s]
+{'epoch': 11, 'rec_avg_loss': '0.5278'}
+100%|██████████| 88/88 [00:16<00:00,  5.34it/s]
+{'epoch': 12, 'rec_avg_loss': '0.4935'}
+100%|██████████| 88/88 [00:17<00:00,  5.03it/s]
+{'epoch': 13, 'rec_avg_loss': '0.4663'}
+100%|██████████| 88/88 [00:15<00:00,  5.53it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 14, 'rec_avg_loss': '0.4436'}
+100%|██████████| 88/88 [00:14<00:00,  5.98it/s]
+{'epoch': 15, 'rec_avg_loss': '0.4218'}
+100%|██████████| 88/88 [00:15<00:00,  5.78it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 16, 'rec_avg_loss': '0.4019'}
+100%|██████████| 88/88 [00:15<00:00,  5.65it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 17, 'rec_avg_loss': '0.3844'}
+100%|██████████| 88/88 [00:15<00:00,  5.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 18, 'rec_avg_loss': '0.3702'}
+100%|██████████| 88/88 [00:15<00:00,  5.54it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 19, 'rec_avg_loss': '0.3550'}
+100%|██████████| 88/88 [00:15<00:00,  5.55it/s]
+{'epoch': 20, 'rec_avg_loss': '0.3445'}
+100%|██████████| 88/88 [00:15<00:00,  5.56it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 21, 'rec_avg_loss': '0.3317'}
+100%|██████████| 88/88 [00:17<00:00,  5.13it/s]
+{'epoch': 22, 'rec_avg_loss': '0.3185'}
+100%|██████████| 88/88 [00:16<00:00,  5.21it/s]
+{'epoch': 23, 'rec_avg_loss': '0.3112'}
+100%|██████████| 88/88 [00:16<00:00,  5.46it/s]
+{'epoch': 24, 'rec_avg_loss': '0.3045'}
+100%|██████████| 88/88 [00:17<00:00,  5.07it/s]
+{'epoch': 25, 'rec_avg_loss': '0.2958'}
+100%|██████████| 88/88 [00:16<00:00,  5.45it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 26, 'rec_avg_loss': '0.2866'}
+100%|██████████| 88/88 [00:16<00:00,  5.48it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 27, 'rec_avg_loss': '0.2842'}
+100%|██████████| 88/88 [00:16<00:00,  5.37it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 28, 'rec_avg_loss': '0.2742'}
+100%|██████████| 88/88 [00:21<00:00,  4.06it/s]
+{'epoch': 29, 'rec_avg_loss': '0.2712'}
+100%|██████████| 88/88 [00:24<00:00,  3.56it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 30, 'rec_avg_loss': '0.2641'}
+100%|██████████| 88/88 [00:23<00:00,  3.67it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 31, 'rec_avg_loss': '0.2615'}
+100%|██████████| 88/88 [00:22<00:00,  3.89it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 32, 'rec_avg_loss': '0.2555'}
+100%|██████████| 88/88 [00:20<00:00,  4.26it/s]
+{'epoch': 33, 'rec_avg_loss': '0.2498'}
+100%|██████████| 88/88 [00:20<00:00,  4.39it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 34, 'rec_avg_loss': '0.2467'}
+100%|██████████| 88/88 [00:22<00:00,  3.85it/s]
+{'epoch': 35, 'rec_avg_loss': '0.2460'}
+100%|██████████| 88/88 [00:22<00:00,  3.88it/s]
+{'epoch': 36, 'rec_avg_loss': '0.2432'}
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+{'epoch': 37, 'rec_avg_loss': '0.2397'}
+100%|██████████| 88/88 [00:19<00:00,  4.50it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 38, 'rec_avg_loss': '0.2363'}
+100%|██████████| 88/88 [00:21<00:00,  4.17it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 39, 'rec_avg_loss': '0.2335'}
+100%|██████████| 88/88 [00:23<00:00,  3.69it/s]
+{'epoch': 40, 'rec_avg_loss': '0.2349'}
+100%|██████████| 88/88 [00:23<00:00,  3.74it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 41, 'rec_avg_loss': '0.2284'}
+100%|██████████| 88/88 [00:27<00:00,  3.24it/s]
+{'epoch': 42, 'rec_avg_loss': '0.2271'}
+100%|██████████| 88/88 [00:25<00:00,  3.51it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 43, 'rec_avg_loss': '0.2243'}
+100%|██████████| 88/88 [00:24<00:00,  3.53it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 44, 'rec_avg_loss': '0.2250'}
+100%|██████████| 88/88 [00:23<00:00,  3.76it/s]
+{'epoch': 45, 'rec_avg_loss': '0.2209'}
+100%|██████████| 88/88 [00:22<00:00,  3.89it/s]
+{'epoch': 46, 'rec_avg_loss': '0.2187'}
+100%|██████████| 88/88 [00:22<00:00,  3.86it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 47, 'rec_avg_loss': '0.2205'}
+100%|██████████| 88/88 [00:22<00:00,  3.85it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 48, 'rec_avg_loss': '0.2180'}
+100%|██████████| 88/88 [00:22<00:00,  3.92it/s]
+{'epoch': 49, 'rec_avg_loss': '0.2153'}
+100%|██████████| 88/88 [00:23<00:00,  3.77it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 50, 'rec_avg_loss': '0.2155'}
+100%|██████████| 88/88 [00:24<00:00,  3.62it/s]
+{'epoch': 51, 'rec_avg_loss': '0.2152'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 52, 'rec_avg_loss': '0.2170'}
+100%|██████████| 88/88 [00:20<00:00,  4.34it/s]
+{'epoch': 53, 'rec_avg_loss': '0.2127'}
+100%|██████████| 88/88 [00:19<00:00,  4.44it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 54, 'rec_avg_loss': '0.2107'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 55, 'rec_avg_loss': '0.2083'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+{'epoch': 56, 'rec_avg_loss': '0.2059'}
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+{'epoch': 57, 'rec_avg_loss': '0.2061'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 58, 'rec_avg_loss': '0.2057'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+{'epoch': 59, 'rec_avg_loss': '0.2049'}
+100%|██████████| 88/88 [00:23<00:00,  3.78it/s]
+{'epoch': 60, 'rec_avg_loss': '0.2085'}
+100%|██████████| 88/88 [00:23<00:00,  3.75it/s]
+{'epoch': 61, 'rec_avg_loss': '0.2014'}
+100%|██████████| 88/88 [00:22<00:00,  3.86it/s]
+{'epoch': 62, 'rec_avg_loss': '0.2035'}
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+{'epoch': 63, 'rec_avg_loss': '0.2010'}
+100%|██████████| 88/88 [00:21<00:00,  4.19it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 64, 'rec_avg_loss': '0.2013'}
+100%|██████████| 88/88 [00:19<00:00,  4.42it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 65, 'rec_avg_loss': '0.1995'}
+100%|██████████| 88/88 [00:23<00:00,  3.77it/s]
+{'epoch': 66, 'rec_avg_loss': '0.1985'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 67, 'rec_avg_loss': '0.2009'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+{'epoch': 68, 'rec_avg_loss': '0.1992'}
+100%|██████████| 88/88 [00:19<00:00,  4.59it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 69, 'rec_avg_loss': '0.1988'}
+100%|██████████| 88/88 [00:21<00:00,  4.09it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 70, 'rec_avg_loss': '0.1945'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+{'epoch': 71, 'rec_avg_loss': '0.1960'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 72, 'rec_avg_loss': '0.1974'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+{'epoch': 73, 'rec_avg_loss': '0.1944'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 74, 'rec_avg_loss': '0.1932'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 75, 'rec_avg_loss': '0.1967'}
+100%|██████████| 88/88 [00:23<00:00,  3.73it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 76, 'rec_avg_loss': '0.1942'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+{'epoch': 77, 'rec_avg_loss': '0.1905'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 78, 'rec_avg_loss': '0.1919'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 79, 'rec_avg_loss': '0.1914'}
+100%|██████████| 88/88 [00:19<00:00,  4.56it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 80, 'rec_avg_loss': '0.1906'}
+100%|██████████| 88/88 [00:21<00:00,  4.14it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 81, 'rec_avg_loss': '0.1899'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 82, 'rec_avg_loss': '0.1901'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 83, 'rec_avg_loss': '0.1956'}
+100%|██████████| 88/88 [00:21<00:00,  4.01it/s]
+{'epoch': 84, 'rec_avg_loss': '0.1905'}
+100%|██████████| 88/88 [00:18<00:00,  4.65it/s]
+{'epoch': 85, 'rec_avg_loss': '0.1905'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 86, 'rec_avg_loss': '0.1884'}
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 87, 'rec_avg_loss': '0.1880'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 88, 'rec_avg_loss': '0.1879'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+{'epoch': 89, 'rec_avg_loss': '0.1888'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+{'epoch': 90, 'rec_avg_loss': '0.1880'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 91, 'rec_avg_loss': '0.1853'}
+100%|██████████| 88/88 [00:23<00:00,  3.81it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 92, 'rec_avg_loss': '0.1848'}
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 93, 'rec_avg_loss': '0.1890'}
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+{'epoch': 94, 'rec_avg_loss': '0.1857'}
+100%|██████████| 88/88 [00:22<00:00,  3.96it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 95, 'rec_avg_loss': '0.1846'}
+100%|██████████| 88/88 [00:18<00:00,  4.65it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 96, 'rec_avg_loss': '0.1880'}
+100%|██████████| 88/88 [00:22<00:00,  3.87it/s]
+{'epoch': 97, 'rec_avg_loss': '0.1839'}
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+{'epoch': 98, 'rec_avg_loss': '0.1859'}
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+{'epoch': 99, 'rec_avg_loss': '0.1882'}
+100%|██████████| 88/88 [00:20<00:00,  4.27it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'epoch': 100, 'rec_avg_loss': '0.1815'}
+100%|██████████| 88/88 [00:20<00:00,  4.27it/s]
+Recommendation EP_valid:101:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 101, 'rec_avg_loss': '0.1828'}
+Recommendation EP_valid:101: 100%|| 88/88 [00:11<00:00,  7.54it/s]
+{'Epoch': 101, 'HIT@5': '0.0598', 'NDCG@5': '0.0401', 'HIT@10': '0.0871', 'NDCG@10': '0.0489', 'HIT@20': '0.1274', 'NDCG@20': '0.0590'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:23<00:00,  3.83it/s]
+Recommendation EP_valid:102:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 102, 'rec_avg_loss': '0.1811'}
+Recommendation EP_valid:102: 100%|| 88/88 [00:11<00:00,  7.73it/s]
+{'Epoch': 102, 'HIT@5': '0.0560', 'NDCG@5': '0.0377', 'HIT@10': '0.0868', 'NDCG@10': '0.0476', 'HIT@20': '0.1274', 'NDCG@20': '0.0578'}
+EarlyStopping counter: 1 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+{'epoch': 103, 'rec_avg_loss': '0.1827'}
+Recommendation EP_valid:103: 100%|| 88/88 [00:11<00:00,  7.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 103, 'HIT@5': '0.0579', 'NDCG@5': '0.0394', 'HIT@10': '0.0881', 'NDCG@10': '0.0491', 'HIT@20': '0.1269', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 2 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+Recommendation EP_valid:104:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 104, 'rec_avg_loss': '0.1822'}
+Recommendation EP_valid:104: 100%|| 88/88 [00:11<00:00,  7.69it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 104, 'HIT@5': '0.0578', 'NDCG@5': '0.0392', 'HIT@10': '0.0870', 'NDCG@10': '0.0486', 'HIT@20': '0.1264', 'NDCG@20': '0.0585'}
+EarlyStopping counter: 3 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+Recommendation EP_valid:105:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 105, 'rec_avg_loss': '0.1823'}
+Recommendation EP_valid:105: 100%|| 88/88 [00:10<00:00,  8.00it/s]
+{'Epoch': 105, 'HIT@5': '0.0586', 'NDCG@5': '0.0389', 'HIT@10': '0.0888', 'NDCG@10': '0.0486', 'HIT@20': '0.1282', 'NDCG@20': '0.0585'}
+  0%|          | 0/88 [00:00<?, ?it/s]EarlyStopping counter: 4 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+{'epoch': 106, 'rec_avg_loss': '0.1817'}
+Recommendation EP_valid:106: 100%|| 88/88 [00:11<00:00,  7.84it/s]
+{'Epoch': 106, 'HIT@5': '0.0579', 'NDCG@5': '0.0395', 'HIT@10': '0.0878', 'NDCG@10': '0.0492', 'HIT@20': '0.1279', 'NDCG@20': '0.0592'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:20<00:00,  4.37it/s]
+Recommendation EP_valid:107:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 107, 'rec_avg_loss': '0.1802'}
+Recommendation EP_valid:107: 100%|| 88/88 [00:08<00:00, 10.75it/s]
+{'Epoch': 107, 'HIT@5': '0.0602', 'NDCG@5': '0.0408', 'HIT@10': '0.0873', 'NDCG@10': '0.0494', 'HIT@20': '0.1275', 'NDCG@20': '0.0596'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:21<00:00,  4.07it/s]
+Recommendation EP_valid:108:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 108, 'rec_avg_loss': '0.1839'}
+Recommendation EP_valid:108: 100%|| 88/88 [00:11<00:00,  7.94it/s]
+{'Epoch': 108, 'HIT@5': '0.0595', 'NDCG@5': '0.0397', 'HIT@10': '0.0884', 'NDCG@10': '0.0490', 'HIT@20': '0.1284', 'NDCG@20': '0.0591'}
+EarlyStopping counter: 1 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+Recommendation EP_valid:109:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 109, 'rec_avg_loss': '0.1797'}
+Recommendation EP_valid:109: 100%|| 88/88 [00:11<00:00,  7.74it/s]
+{'Epoch': 109, 'HIT@5': '0.0594', 'NDCG@5': '0.0392', 'HIT@10': '0.0873', 'NDCG@10': '0.0481', 'HIT@20': '0.1266', 'NDCG@20': '0.0580'}
+EarlyStopping counter: 2 out of 20
+100%|██████████| 88/88 [00:18<00:00,  4.68it/s]
+Recommendation EP_valid:110:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 110, 'rec_avg_loss': '0.1823'}
+Recommendation EP_valid:110: 100%|| 88/88 [00:08<00:00, 10.50it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 110, 'HIT@5': '0.0601', 'NDCG@5': '0.0403', 'HIT@10': '0.0889', 'NDCG@10': '0.0495', 'HIT@20': '0.1280', 'NDCG@20': '0.0594'}
+EarlyStopping counter: 3 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.96it/s]
+Recommendation EP_valid:111:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 111, 'rec_avg_loss': '0.1828'}
+Recommendation EP_valid:111: 100%|| 88/88 [00:11<00:00,  7.79it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 111, 'HIT@5': '0.0586', 'NDCG@5': '0.0394', 'HIT@10': '0.0882', 'NDCG@10': '0.0489', 'HIT@20': '0.1270', 'NDCG@20': '0.0586'}
+EarlyStopping counter: 4 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.76it/s]
+Recommendation EP_valid:112:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 112, 'rec_avg_loss': '0.1815'}
+Recommendation EP_valid:112: 100%|| 88/88 [00:11<00:00,  7.88it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 112, 'HIT@5': '0.0590', 'NDCG@5': '0.0396', 'HIT@10': '0.0883', 'NDCG@10': '0.0491', 'HIT@20': '0.1257', 'NDCG@20': '0.0585'}
+EarlyStopping counter: 5 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.14it/s]
+Recommendation EP_valid:113:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 113, 'rec_avg_loss': '0.1806'}
+Recommendation EP_valid:113: 100%|| 88/88 [00:11<00:00,  7.90it/s]
+{'Epoch': 113, 'HIT@5': '0.0620', 'NDCG@5': '0.0416', 'HIT@10': '0.0897', 'NDCG@10': '0.0505', 'HIT@20': '0.1259', 'NDCG@20': '0.0597'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+{'epoch': 114, 'rec_avg_loss': '0.1786'}
+Recommendation EP_valid:114: 100%|| 88/88 [00:11<00:00,  7.67it/s]
+{'Epoch': 114, 'HIT@5': '0.0612', 'NDCG@5': '0.0416', 'HIT@10': '0.0889', 'NDCG@10': '0.0505', 'HIT@20': '0.1261', 'NDCG@20': '0.0599'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:21<00:00,  4.12it/s]
+{'epoch': 115, 'rec_avg_loss': '0.1801'}
+Recommendation EP_valid:115: 100%|| 88/88 [00:11<00:00,  7.84it/s]
+{'Epoch': 115, 'HIT@5': '0.0607', 'NDCG@5': '0.0419', 'HIT@10': '0.0876', 'NDCG@10': '0.0505', 'HIT@20': '0.1251', 'NDCG@20': '0.0600'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:22<00:00,  3.84it/s]
+{'epoch': 116, 'rec_avg_loss': '0.1807'}
+Recommendation EP_valid:116: 100%|| 88/88 [00:11<00:00,  7.66it/s]
+{'Epoch': 116, 'HIT@5': '0.0594', 'NDCG@5': '0.0407', 'HIT@10': '0.0885', 'NDCG@10': '0.0502', 'HIT@20': '0.1261', 'NDCG@20': '0.0596'}
+  0%|          | 0/88 [00:00<?, ?it/s]EarlyStopping counter: 1 out of 20
+100%|██████████| 88/88 [00:18<00:00,  4.79it/s]
+Recommendation EP_valid:117:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 117, 'rec_avg_loss': '0.1775'}
+Recommendation EP_valid:117: 100%|| 88/88 [00:07<00:00, 11.29it/s]
+{'Epoch': 117, 'HIT@5': '0.0614', 'NDCG@5': '0.0411', 'HIT@10': '0.0898', 'NDCG@10': '0.0502', 'HIT@20': '0.1257', 'NDCG@20': '0.0592'}
+EarlyStopping counter: 2 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.96it/s]
+{'epoch': 118, 'rec_avg_loss': '0.1754'}
+Recommendation EP_valid:118: 100%|| 88/88 [00:11<00:00,  7.87it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 118, 'HIT@5': '0.0592', 'NDCG@5': '0.0403', 'HIT@10': '0.0889', 'NDCG@10': '0.0498', 'HIT@20': '0.1265', 'NDCG@20': '0.0592'}
+EarlyStopping counter: 3 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.75it/s]
+{'epoch': 119, 'rec_avg_loss': '0.1824'}
+Recommendation EP_valid:119: 100%|| 88/88 [00:11<00:00,  7.92it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 119, 'HIT@5': '0.0605', 'NDCG@5': '0.0401', 'HIT@10': '0.0885', 'NDCG@10': '0.0491', 'HIT@20': '0.1272', 'NDCG@20': '0.0588'}
+EarlyStopping counter: 4 out of 20
+100%|██████████| 88/88 [00:18<00:00,  4.78it/s]
+Recommendation EP_valid:120:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 120, 'rec_avg_loss': '0.1799'}
+Recommendation EP_valid:120: 100%|| 88/88 [00:08<00:00, 10.71it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 120, 'HIT@5': '0.0590', 'NDCG@5': '0.0400', 'HIT@10': '0.0865', 'NDCG@10': '0.0489', 'HIT@20': '0.1250', 'NDCG@20': '0.0586'}
+EarlyStopping counter: 5 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.71it/s]
+{'epoch': 121, 'rec_avg_loss': '0.1784'}
+Recommendation EP_valid:121: 100%|| 88/88 [00:11<00:00,  7.54it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 121, 'HIT@5': '0.0584', 'NDCG@5': '0.0389', 'HIT@10': '0.0876', 'NDCG@10': '0.0483', 'HIT@20': '0.1243', 'NDCG@20': '0.0575'}
+EarlyStopping counter: 6 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.87it/s]
+{'epoch': 122, 'rec_avg_loss': '0.1790'}
+Recommendation EP_valid:122: 100%|| 88/88 [00:11<00:00,  7.76it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 122, 'HIT@5': '0.0591', 'NDCG@5': '0.0394', 'HIT@10': '0.0888', 'NDCG@10': '0.0490', 'HIT@20': '0.1265', 'NDCG@20': '0.0585'}
+EarlyStopping counter: 7 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.14it/s]
+Recommendation EP_valid:123:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 123, 'rec_avg_loss': '0.1761'}
+Recommendation EP_valid:123: 100%|| 88/88 [00:11<00:00,  7.78it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 123, 'HIT@5': '0.0593', 'NDCG@5': '0.0398', 'HIT@10': '0.0891', 'NDCG@10': '0.0494', 'HIT@20': '0.1266', 'NDCG@20': '0.0588'}
+EarlyStopping counter: 8 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.83it/s]
+{'epoch': 124, 'rec_avg_loss': '0.1765'}
+Recommendation EP_valid:124: 100%|| 88/88 [00:11<00:00,  7.70it/s]
+{'Epoch': 124, 'HIT@5': '0.0597', 'NDCG@5': '0.0398', 'HIT@10': '0.0891', 'NDCG@10': '0.0492', 'HIT@20': '0.1291', 'NDCG@20': '0.0593'}
+EarlyStopping counter: 9 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.05it/s]
+{'epoch': 125, 'rec_avg_loss': '0.1720'}
+Recommendation EP_valid:125: 100%|| 88/88 [00:11<00:00,  7.89it/s]
+{'Epoch': 125, 'HIT@5': '0.0584', 'NDCG@5': '0.0396', 'HIT@10': '0.0890', 'NDCG@10': '0.0495', 'HIT@20': '0.1268', 'NDCG@20': '0.0590'}
+EarlyStopping counter: 10 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+{'epoch': 126, 'rec_avg_loss': '0.1757'}
+Recommendation EP_valid:126: 100%|| 88/88 [00:11<00:00,  7.69it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 126, 'HIT@5': '0.0584', 'NDCG@5': '0.0396', 'HIT@10': '0.0899', 'NDCG@10': '0.0498', 'HIT@20': '0.1279', 'NDCG@20': '0.0593'}
+EarlyStopping counter: 11 out of 20
+100%|██████████| 88/88 [00:17<00:00,  4.98it/s]
+Recommendation EP_valid:127:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 127, 'rec_avg_loss': '0.1762'}
+Recommendation EP_valid:127: 100%|| 88/88 [00:08<00:00, 10.70it/s]
+{'Epoch': 127, 'HIT@5': '0.0579', 'NDCG@5': '0.0388', 'HIT@10': '0.0882', 'NDCG@10': '0.0486', 'HIT@20': '0.1257', 'NDCG@20': '0.0580'}
+EarlyStopping counter: 12 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+{'epoch': 128, 'rec_avg_loss': '0.1752'}
+Recommendation EP_valid:128: 100%|| 88/88 [00:11<00:00,  7.83it/s]
+{'Epoch': 128, 'HIT@5': '0.0596', 'NDCG@5': '0.0398', 'HIT@10': '0.0882', 'NDCG@10': '0.0491', 'HIT@20': '0.1245', 'NDCG@20': '0.0582'}
+EarlyStopping counter: 13 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.85it/s]
+{'epoch': 129, 'rec_avg_loss': '0.1755'}
+Recommendation EP_valid:129: 100%|| 88/88 [00:11<00:00,  7.89it/s]
+{'Epoch': 129, 'HIT@5': '0.0597', 'NDCG@5': '0.0399', 'HIT@10': '0.0884', 'NDCG@10': '0.0491', 'HIT@20': '0.1265', 'NDCG@20': '0.0587'}
+EarlyStopping counter: 14 out of 20
+100%|██████████| 88/88 [00:18<00:00,  4.88it/s]
+Recommendation EP_valid:130:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 130, 'rec_avg_loss': '0.1750'}
+Recommendation EP_valid:130: 100%|| 88/88 [00:09<00:00,  9.29it/s]
+{'Epoch': 130, 'HIT@5': '0.0607', 'NDCG@5': '0.0403', 'HIT@10': '0.0883', 'NDCG@10': '0.0492', 'HIT@20': '0.1269', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 15 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.80it/s]
+Recommendation EP_valid:131:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 131, 'rec_avg_loss': '0.1739'}
+Recommendation EP_valid:131: 100%|| 88/88 [00:11<00:00,  7.78it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 131, 'HIT@5': '0.0584', 'NDCG@5': '0.0399', 'HIT@10': '0.0874', 'NDCG@10': '0.0492', 'HIT@20': '0.1259', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 16 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.05it/s]
+Recommendation EP_valid:132:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 132, 'rec_avg_loss': '0.1742'}
+Recommendation EP_valid:132: 100%|| 88/88 [00:11<00:00,  7.78it/s]
+{'Epoch': 132, 'HIT@5': '0.0588', 'NDCG@5': '0.0402', 'HIT@10': '0.0868', 'NDCG@10': '0.0492', 'HIT@20': '0.1274', 'NDCG@20': '0.0594'}
+EarlyStopping counter: 17 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+{'epoch': 133, 'rec_avg_loss': '0.1736'}
+Recommendation EP_valid:133: 100%|| 88/88 [00:11<00:00,  7.90it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 133, 'HIT@5': '0.0594', 'NDCG@5': '0.0404', 'HIT@10': '0.0876', 'NDCG@10': '0.0494', 'HIT@20': '0.1253', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 18 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.89it/s]
+{'epoch': 134, 'rec_avg_loss': '0.1736'}
+Recommendation EP_valid:134: 100%|| 88/88 [00:11<00:00,  7.87it/s]
+{'Epoch': 134, 'HIT@5': '0.0601', 'NDCG@5': '0.0405', 'HIT@10': '0.0890', 'NDCG@10': '0.0497', 'HIT@20': '0.1269', 'NDCG@20': '0.0592'}
+EarlyStopping counter: 19 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.87it/s]
+Recommendation EP_valid:135:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 135, 'rec_avg_loss': '0.1760'}
+Recommendation EP_valid:135: 100%|| 88/88 [00:11<00:00,  7.94it/s]
+{'Epoch': 135, 'HIT@5': '0.0598', 'NDCG@5': '0.0408', 'HIT@10': '0.0889', 'NDCG@10': '0.0502', 'HIT@20': '0.1281', 'NDCG@20': '0.0600'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:22<00:00,  3.99it/s]
+{'epoch': 136, 'rec_avg_loss': '0.1705'}
+Recommendation EP_valid:136: 100%|| 88/88 [00:10<00:00,  8.04it/s]
+{'Epoch': 136, 'HIT@5': '0.0601', 'NDCG@5': '0.0413', 'HIT@10': '0.0896', 'NDCG@10': '0.0508', 'HIT@20': '0.1285', 'NDCG@20': '0.0606'}
+Validation score increased.  Saving model ...
+100%|██████████| 88/88 [00:18<00:00,  4.77it/s]
+{'epoch': 137, 'rec_avg_loss': '0.1729'}
+Recommendation EP_valid:137: 100%|| 88/88 [00:10<00:00,  8.44it/s]
+{'Epoch': 137, 'HIT@5': '0.0601', 'NDCG@5': '0.0406', 'HIT@10': '0.0887', 'NDCG@10': '0.0498', 'HIT@20': '0.1266', 'NDCG@20': '0.0593'}
+EarlyStopping counter: 1 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+Recommendation EP_valid:138:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 138, 'rec_avg_loss': '0.1740'}
+Recommendation EP_valid:138: 100%|| 88/88 [00:11<00:00,  7.81it/s]
+{'Epoch': 138, 'HIT@5': '0.0585', 'NDCG@5': '0.0397', 'HIT@10': '0.0887', 'NDCG@10': '0.0495', 'HIT@20': '0.1293', 'NDCG@20': '0.0597'}
+EarlyStopping counter: 2 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.92it/s]
+{'epoch': 139, 'rec_avg_loss': '0.1695'}
+Recommendation EP_valid:139: 100%|| 88/88 [00:09<00:00,  8.98it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 139, 'HIT@5': '0.0575', 'NDCG@5': '0.0391', 'HIT@10': '0.0889', 'NDCG@10': '0.0492', 'HIT@20': '0.1278', 'NDCG@20': '0.0590'}
+EarlyStopping counter: 3 out of 20
+100%|██████████| 88/88 [00:19<00:00,  4.55it/s]
+Recommendation EP_valid:140:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 140, 'rec_avg_loss': '0.1717'}
+Recommendation EP_valid:140: 100%|| 88/88 [00:11<00:00,  7.94it/s]
+{'Epoch': 140, 'HIT@5': '0.0578', 'NDCG@5': '0.0389', 'HIT@10': '0.0877', 'NDCG@10': '0.0486', 'HIT@20': '0.1262', 'NDCG@20': '0.0583'}
+EarlyStopping counter: 4 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+{'epoch': 141, 'rec_avg_loss': '0.1776'}
+Recommendation EP_valid:141: 100%|| 88/88 [00:11<00:00,  7.83it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 141, 'HIT@5': '0.0588', 'NDCG@5': '0.0396', 'HIT@10': '0.0879', 'NDCG@10': '0.0490', 'HIT@20': '0.1273', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 5 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.96it/s]
+{'epoch': 142, 'rec_avg_loss': '0.1732'}
+Recommendation EP_valid:142: 100%|| 88/88 [00:11<00:00,  7.94it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 142, 'HIT@5': '0.0601', 'NDCG@5': '0.0402', 'HIT@10': '0.0906', 'NDCG@10': '0.0500', 'HIT@20': '0.1277', 'NDCG@20': '0.0593'}
+EarlyStopping counter: 6 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.79it/s]
+{'epoch': 143, 'rec_avg_loss': '0.1726'}
+Recommendation EP_valid:143: 100%|| 88/88 [00:11<00:00,  7.90it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 143, 'HIT@5': '0.0578', 'NDCG@5': '0.0393', 'HIT@10': '0.0894', 'NDCG@10': '0.0494', 'HIT@20': '0.1281', 'NDCG@20': '0.0591'}
+EarlyStopping counter: 7 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.03it/s]
+{'epoch': 144, 'rec_avg_loss': '0.1760'}
+Recommendation EP_valid:144: 100%|| 88/88 [00:11<00:00,  7.88it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 144, 'HIT@5': '0.0569', 'NDCG@5': '0.0387', 'HIT@10': '0.0881', 'NDCG@10': '0.0487', 'HIT@20': '0.1278', 'NDCG@20': '0.0587'}
+EarlyStopping counter: 8 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.78it/s]
+Recommendation EP_valid:145:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 145, 'rec_avg_loss': '0.1726'}
+Recommendation EP_valid:145: 100%|| 88/88 [00:11<00:00,  7.84it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 145, 'HIT@5': '0.0580', 'NDCG@5': '0.0392', 'HIT@10': '0.0871', 'NDCG@10': '0.0486', 'HIT@20': '0.1280', 'NDCG@20': '0.0589'}
+EarlyStopping counter: 9 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.98it/s]
+Recommendation EP_valid:146:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 146, 'rec_avg_loss': '0.1720'}
+Recommendation EP_valid:146: 100%|| 88/88 [00:08<00:00, 10.23it/s]
+{'Epoch': 146, 'HIT@5': '0.0609', 'NDCG@5': '0.0410', 'HIT@10': '0.0881', 'NDCG@10': '0.0497', 'HIT@20': '0.1287', 'NDCG@20': '0.0599'}
+EarlyStopping counter: 10 out of 20
+100%|██████████| 88/88 [00:20<00:00,  4.39it/s]
+{'epoch': 147, 'rec_avg_loss': '0.1724'}
+Recommendation EP_valid:147: 100%|| 88/88 [00:11<00:00,  7.98it/s]
+{'Epoch': 147, 'HIT@5': '0.0585', 'NDCG@5': '0.0399', 'HIT@10': '0.0884', 'NDCG@10': '0.0495', 'HIT@20': '0.1291', 'NDCG@20': '0.0598'}
+  0%|          | 0/88 [00:00<?, ?it/s]EarlyStopping counter: 11 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.82it/s]
+{'epoch': 148, 'rec_avg_loss': '0.1718'}
+Recommendation EP_valid:148: 100%|| 88/88 [00:10<00:00,  8.01it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 148, 'HIT@5': '0.0581', 'NDCG@5': '0.0397', 'HIT@10': '0.0901', 'NDCG@10': '0.0500', 'HIT@20': '0.1292', 'NDCG@20': '0.0598'}
+EarlyStopping counter: 12 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.09it/s]
+Recommendation EP_valid:149:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 149, 'rec_avg_loss': '0.1694'}
+Recommendation EP_valid:149: 100%|| 88/88 [00:07<00:00, 11.23it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 149, 'HIT@5': '0.0606', 'NDCG@5': '0.0406', 'HIT@10': '0.0896', 'NDCG@10': '0.0499', 'HIT@20': '0.1272', 'NDCG@20': '0.0594'}
+EarlyStopping counter: 13 out of 20
+100%|██████████| 88/88 [00:20<00:00,  4.27it/s]
+Recommendation EP_valid:150:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 150, 'rec_avg_loss': '0.1698'}
+Recommendation EP_valid:150: 100%|| 88/88 [00:11<00:00,  7.92it/s]
+{'Epoch': 150, 'HIT@5': '0.0604', 'NDCG@5': '0.0407', 'HIT@10': '0.0901', 'NDCG@10': '0.0503', 'HIT@20': '0.1288', 'NDCG@20': '0.0600'}
+EarlyStopping counter: 14 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.77it/s]
+{'epoch': 151, 'rec_avg_loss': '0.1695'}
+Recommendation EP_valid:151: 100%|| 88/88 [00:11<00:00,  7.90it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 151, 'HIT@5': '0.0610', 'NDCG@5': '0.0405', 'HIT@10': '0.0894', 'NDCG@10': '0.0496', 'HIT@20': '0.1267', 'NDCG@20': '0.0590'}
+EarlyStopping counter: 15 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.73it/s]
+{'epoch': 152, 'rec_avg_loss': '0.1717'}
+Recommendation EP_valid:152: 100%|| 88/88 [00:11<00:00,  7.90it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 152, 'HIT@5': '0.0588', 'NDCG@5': '0.0400', 'HIT@10': '0.0890', 'NDCG@10': '0.0497', 'HIT@20': '0.1282', 'NDCG@20': '0.0595'}
+EarlyStopping counter: 16 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.10it/s]
+{'epoch': 153, 'rec_avg_loss': '0.1697'}
+Recommendation EP_valid:153: 100%|| 88/88 [00:11<00:00,  7.63it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 153, 'HIT@5': '0.0610', 'NDCG@5': '0.0409', 'HIT@10': '0.0887', 'NDCG@10': '0.0498', 'HIT@20': '0.1280', 'NDCG@20': '0.0596'}
+EarlyStopping counter: 17 out of 20
+100%|██████████| 88/88 [00:23<00:00,  3.77it/s]
+Recommendation EP_valid:154:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 154, 'rec_avg_loss': '0.1701'}
+Recommendation EP_valid:154: 100%|| 88/88 [00:11<00:00,  7.66it/s]
+{'Epoch': 154, 'HIT@5': '0.0595', 'NDCG@5': '0.0398', 'HIT@10': '0.0878', 'NDCG@10': '0.0489', 'HIT@20': '0.1279', 'NDCG@20': '0.0590'}
+EarlyStopping counter: 18 out of 20
+100%|██████████| 88/88 [00:22<00:00,  3.96it/s]
+Recommendation EP_valid:155:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 155, 'rec_avg_loss': '0.1707'}
+Recommendation EP_valid:155: 100%|| 88/88 [00:11<00:00,  7.89it/s]
+  0%|          | 0/88 [00:00<?, ?it/s]{'Epoch': 155, 'HIT@5': '0.0612', 'NDCG@5': '0.0405', 'HIT@10': '0.0899', 'NDCG@10': '0.0497', 'HIT@20': '0.1272', 'NDCG@20': '0.0591'}
+EarlyStopping counter: 19 out of 20
+100%|██████████| 88/88 [00:21<00:00,  4.03it/s]
+Recommendation EP_valid:156:   0%|| 0/88 [00:00<?, ?it/s]{'epoch': 156, 'rec_avg_loss': '0.1675'}
+Recommendation EP_valid:156: 100%|| 88/88 [00:08<00:00, 10.73it/s]
+{'Epoch': 156, 'HIT@5': '0.0606', 'NDCG@5': '0.0403', 'HIT@10': '0.0893', 'NDCG@10': '0.0495', 'HIT@20': '0.1266', 'NDCG@20': '0.0588'}
+EarlyStopping counter: 20 out of 20
+Early stopping
+Recommendation EP_valid:0: 100%|| 88/88 [00:10<00:00,  8.11it/s]
+{'Epoch': 0, 'HIT@5': '0.0487', 'NDCG@5': '0.0327', 'HIT@10': '0.0709', 'NDCG@10': '0.0398', 'HIT@20': '0.1031', 'NDCG@20': '0.0479'}
+
+Process finished with exit code 0
